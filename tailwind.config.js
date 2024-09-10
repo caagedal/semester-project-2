@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{html,js,mjs}","./index.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        marcellus: [`Marcellus`, `serif`],
+        "pt-serif": [`PT Serif`, `serif`]
+      }
+    },
   },
   plugins: [],
 }
