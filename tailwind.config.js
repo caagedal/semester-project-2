@@ -5,7 +5,11 @@ module.exports = {
     extend: {
       fontFamily: {
         marcellus: [`Marcellus`, `serif`],
-        "pt-serif": [`PT Serif`, `serif`]
+        "pt-serif": [`PT Serif`, `serif`],
+      },
+      colors: {
+        "custom-green": `#303636`,
+        "custom-orange": `#E17042`,
       }
     },
   },
