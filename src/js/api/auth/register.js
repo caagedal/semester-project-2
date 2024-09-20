@@ -5,44 +5,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import { baseURL } from "../data/constants.mjs";
+// import { baseURL } from "../data/constants.js";
 
 // const action = "/auth/register";
 // const method = "POST";
