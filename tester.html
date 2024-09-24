@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-white>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body class="h-full">
+    <div class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+      
+        <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+            <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+                
+                <div class="relative transform overflow-hidden rounded-4xl bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+
+                    <!-- Login/register tabs -->
+                    <div class="bg-custom-green  flex justify-around  text-white text-xl">
+                        <div class="login-tab text-center text-custom-green w-full py-2.5 bg-white rounded-t-4xl font-bold">
+                            <button class="w-full" id="loginTab">Log in</button>
+                        </div>
+                        <div class="register-tab text-center w-full py-2.5">
+                            <button class="w-full" id="regTab">Register</button>
+                        </div>
+                    </div>                    
+                    <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+                        
+                        <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+                            <h2 class="text-center text-custom-green text-4xl font-marcellus">BidPoint</h2>
+                            <h2 class="mt-10 text-center text-xl font-bold leading-9 tracking-tight text-custom-green">Sign in to your account</h2>
+                        </div>
+                
+                        <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+                            <form class="space-y-6" action="#" method="POST">
+                                <div>
+                                    <label for="email" class="block text-sm font-medium leading-6 text-custom-green">Email address</label>
+                                    <div class="mt-2">
+                                        <input id="email" name="email" type="email" autocomplete="email" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-custom-green sm:text-sm sm:leading-6">
+                                    </div>
+                                </div>
+                        
+                                <div>
+                                    <div class="flex items-center justify-between">
+                                        <label for="password" class="block text-sm font-medium leading-6 text-custom-green">Password</label>
+                                        <div class="text-sm">
+                                            <a href="#" class="font-semibold text-custom-orange hover:text-custom-green">Forgot password?</a>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2">
+                                        <input id="password" name="password" type="password" autocomplete="current-password" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-custom-green sm:text-sm sm:leading-6">
+                                    </div>
+                                </div>
+                        
+                                <div>
+                                    <button type="submit" class="flex w-full justify-center rounded-md bg-custom-green px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-custom-light-green focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-custom-light-green">Sign in</button>
+                                </div>
+                            </form>
+                    
+                            <p class="mt-10 text-center text-sm text-gray-500">
+                                Not a member?
+                                <a href="#" class="font-semibold leading-6 text-custom-orange hover:text-custom-green">Register now</a>
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+      
+</body>
+</html>

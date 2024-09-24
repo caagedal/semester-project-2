@@ -4,71 +4,47 @@ import * as storage from "../../storage/index.js";
 const action = "/auth/login";
 const method = "post"
 
+/**
+ * Logs in the user by sending a profile object to the API, retrieves the access token
+ * and stores it locally. Reloads the window upon successful login.
+ *
+ * @async
+ * @function login
+ * @param {Object} profile - The user's profile data that includes credentials for login.
+ * @throws {Error} If login fails due to network issues or invalid credentials.
+ * @returns {Promise<Object>} The profile data of the logged-in user, minus the access token.
+ */
 
+export async function login(profile){
+    try{
+        const loginURL = API_BASE + action;
+        const body = JSON.stringify(profile);
 
+        const response = await fetch(loginURL, {
+            headers: {
+                "Content-Type": "application/json",
+            },
+            method,
+            body,
+        });
 
+        if (response.ok){
+            const {accessToken, ...profile} = (await response.json()).data;
+            storage.save("token", accessToken);
+            storage.save("profile", profile);
 
+            window.location.reload();
 
+            return profile;
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// export function save(key, value) {
-//     localStorage.setItem(key, JSON.stringify(value));
-// }
-
-// export function load(key) {
-//     try{
-//         const value = localStorage.getItem(key);
-//         return JSON.parse(value);
-//     }catch(error){
-//         return null;
-//     }
-// }
-
-// export function remove(key) {
-//     localStorage.removeItem(key);
-// }
-
-
-
-// const action = "/auth/login";
-// const method = "post";
-
-// async function login(profile){
-//     try {
-//         const loginURL = baseURL + action;
-//         const body = JSON.stringify(profile);
-//         const response = await fetch(loginURL, {
-//             headers: {
-//                 "Content-Type": "application/json",
-//             },
-//             method,
-//             body,
-//         });
-//         if (responde.ok){
-//             const {accesstoken, ...profile} = (await response.json()).data;
-//             Storage.save("token", accesstoken);
-//             Storage.save("profile", profile);
-
-//             return profile;
-//         }
-//         throw new Error("Failed to login" + response.message);
-//     } catch (error){
-//         console.error(error);
-//     }
-// };
+        const status = document.querySelector(".login-state");
+        const error = await response.json();
+        status.classList.add("color-red");
+        status.textcontent = error.error[0].message;
+        throw new Error("Login failed");
+    }catch(error){
+        console.error(error);
+    }
+};
 

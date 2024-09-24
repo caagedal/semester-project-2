@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js,mjs}","./index.html","./listings/index.html"],
+  content: ["./src/**/*.{html,js,mjs}","./index.html","./tester.html", "./listings/index.html"],
   theme: {
     extend: {
       fontFamily: {
@@ -8,8 +8,12 @@ module.exports = {
         "pt-serif": [`PT Serif`, `serif`],
       },
       colors: {
-        "custom-green": `#303636`,
+        "custom-green": `#354242`,
+        "custom-light-green": `#495A58`,
         "custom-orange": `#E17042`,
+      },
+      borderRadius: {
+        "4xl": "2rem",
       }
     },
   },
