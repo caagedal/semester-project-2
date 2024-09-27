@@ -21,6 +21,9 @@ module.exports = {
         "custom-295": "18.438rem",
         "custom-362": "22.625rem",
         "custom-249": "15.563rem",
+      },
+      flex: {
+        "2": "1 1 25%",
       }
     },
   },
