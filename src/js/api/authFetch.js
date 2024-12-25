@@ -7,7 +7,9 @@ import { API_KEY } from "./constants.js";
  */
 
 export function headers(){
+    
     const token = load("token");
+
     return {
         "Content-Type": "application/json",
         Authorization: `Bearer ${token}`,

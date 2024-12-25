@@ -1,4 +1,4 @@
-import { load } from ".";
+import { load } from "./index.js";
 
 /**
  * Checks if the user is online by verifying the presence of an access token in storage.

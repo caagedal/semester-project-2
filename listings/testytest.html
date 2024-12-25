@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style.css">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/4639419757.js" crossorigin="anonymous"></script>
+    <script type="module" src="/src/js/handlers/navbarHandle.js"></script>
+    
+</head>
+<body class="min-h-screen flex flex-col bg-custom-white">
+    
+    <header class="bg-custom-green">
+       <nav class="flex max-w-screen-xl items-center justify-between text-white mx-auto flex-wrap">
+        <a href="/index.html" class="font-marcellus text-4xl"> BidPoint
+        </a>
+        <div class="online flex gap-5" id="navInput">            
+        </div>
+       </nav>
+    </header>
+    <main class="max-w-screen-xl flex flex-col mx-auto"> 
+        <section class="">
+
+            <!-- START -- listingContainer append container-->
+            <div class="rounded-5xl bg-white text-left shadow-xl  sm:my-8 sm:w-full sm:max-w-3xl px-12 py-4">
+      
+                          
+                        <!-- countDownElement append listingContainer-->
+                          <p class="text-center text-3xl text-custom-orange pb-2">Ending in 2d 3h 16m 37s</p>
+
+                          <!-- ContentContainer append listingContainer-->
+                          <div class="speflisting-info">
+
+                            <!-- listingImage append contentContainer-->
+                            <img class="rounded-5xl" src="https://images.unsplash.com/photo-1727270921836-3d51d25d9e33?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+
+                              <!-- title og description   -->
+
+                              <!-- titleDescription  append contentCOntainer-->
+                              <div class="flex flex-col py-5">
+                                <!-- topText  append titleDescription-->
+                                <div class="flex justify-between">
+                                    <!-- title append topText-->
+                                    <h1 class="text-4xl text-custom-green font-marcellus font-bold">Listing title</h1>
+                                    
+                                    <!-- updateDelete append topText-->
+                                    <div class="flex gap-4 text-xl">
+                                        <!-- updateButton append updateDelete-->
+                                        <button>
+                                            <i class="fa-regular fa-pen-to-square text-custom-green"></i>
+                                        </button>
+                                        <!-- deleteButton append updateDelete-->
+                                        <button>
+                                            <i class="fa-solid fa-trash text-red-600"></i>
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                                <!-- listingUser append titleDescription-->
+                                <p class="text-custom-orange text-sm pb-1">By Username3123</p>
+                                <!-- listingDescription append titleDescription-->
+                                <h2 class="text-xl text-custom-green">A description about the listing item, it can be long so keep that in mind.</h2>
+                              
+                              </div>
+      
+                              <!-- datesID append contentContainer-->
+                              <div class="flex flex-col gap-2">
+                                
+                                <!-- createdElement append datesID-->
+                                <div class="font-marcellus text-md">
+                                  <!-- cerated  append createdElement-->
+                                  <p class="font-bold">Created</p>
+                                  <!-- createdDate  append createdElement-->
+                                  <p>12/08/1991</p>
+                                </div>
+
+                                <!--  endAndIDContainer append datesID-->
+                                <div class="flex justify-between font-marcellus">
+                                  
+                                  <!-- endDate  append endAndIDContainer-->
+                                  <div class=" text-md">
+                                    <!-- endDateText  append endDate-->
+                                    <p class="font-bold">Ending</p>
+                                    <!-- endDateElement  append endDate-->
+                                    <p>15/08/1991</p>
+                                  </div>
+
+                                  <!-- listingID  append to endAndIDCONTAINER-->
+                                  <p class="flex items-end text-sm font-bold">ID12341234123</p>
+                                </div>
+
+                              </div>
+
+      
+                              <!-- biddingContainer append contentContainer-->
+                              <div class="flex flex-col gap-4 font-marcellus">
+                                
+                                <!-- currentBidContainer append biddingContainer -->
+                                <div class="text-center py-4">
+                                  <!-- currentBid append currentBidContainer-->
+                                  <p class="text-4xl text-custom-green font-marcellus">Current bid</p>
+                                  
+                                  <!-- currentBidAmount append currentBidCOntainer-->
+                                  <div class="flex justify-center gap-1 text-4xl">
+                                    <!-- currentBidAmountCoins append currentBidAmount-->
+                                    <i class="fa-solid fa-coins text-custom-orange"></i>
+                                    <!-- currentBidAmountNum append currentBidAmount-->
+                                    <p class="text-custom-green">50</p>
+                                  </div>                          
+                                </div>
+
+                                <div class="flex flex-col text-center">
+                                  <div class="flex justify-center gap-2">
+                                    <form>
+                                      <input type="number" name="bidAmount" id="bidAmount" aria-required="true" aria-label="Bid amount" title="Amount must be bigger than the current bid." min="lastBidAmount +1" class="border-2 border-custom-green rounded-xl p-2">
+                                    </form>
+                                    <button class="bg-custom-green py-2 px-4 text-xl rounded-xl text-white">Bid!</button>
+                                  </div>
+                                  <p>Credits available: 591 <i class="fa-solid fa-coins text-custom-orange"></i></p>
+                                </div>
+                              </div>
+      
+                              <!-- Bid history -->
+                              <!-- <div>
+                                <p>Bid history</p>
+                                <ul>
+                                  <li class="flex"><i class="fa-solid fa-coins"></i><p>48</p></li>
+                                  <li class="flex"><i class="fa-solid fa-coins"></i><p>48</p></li>
+                                  <li class="flex"><i class="fa-solid fa-coins"></i><p>48</p></li>
+                                  <li class="flex"><i class="fa-solid fa-coins"></i><p>48</p></li>
+                                  <li class="flex"><i class="fa-solid fa-coins"></i><p>48</p></li>
+                                  <li class="flex"><i class="fa-solid fa-coins"></i><p>48</p></li>
+                                  <li class="flex"><i class="fa-solid fa-coins"></i><p>48</p></li>
+                                  <li class="flex"><i class="fa-solid fa-coins"></i><p>48</p></li>
+                                  <li class="flex"><i class="fa-solid fa-coins"></i><p>48</p></li>
+                                </ul>
+                              </div> -->
+                              
+      
+                            
+                          <!-- </div> -->
+                        </div>
+                            
+                      </div>
+        </section>
+        <div class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true" id="loginModal">
+          <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+        
+          <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+              <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+                  
+                  <div class="relative transform overflow-hidden rounded-4xl bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+  
+                      <!-- Login/register tabs -->
+                      <div class="bg-custom-green  flex justify-around  text-white text-xl">
+                          <div class="login-tab text-center text-custom-green w-full py-2.5 bg-white rounded-t-4xl font-bold">
+                              <button class="w-full" id="loginTab">Log in</button>
+                          </div>
+                          <div class="register-tab text-center w-full py-2.5">
+                              <button class="w-full" id="regTab">Register</button>
+                          </div>
+                      </div>                    
+                      <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+                          
+                          <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+                              <h2 class="text-center text-custom-green text-4xl font-marcellus">BidPoint</h2>
+                              <h2 class="mt-10 text-center text-xl font-bold leading-9 tracking-tight text-custom-green">Sign in to your account</h2>
+                          </div>
+                  
+                          <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+                              <form class="space-y-6" action="#" method="POST">
+                                  <div>
+                                      <label for="email" class="block text-sm font-medium leading-6 text-custom-green">Email address</label>
+                                      <div class="mt-2">
+                                          <input id="email" name="email" type="email" autocomplete="email" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-custom-green sm:text-sm sm:leading-6">
+                                      </div>
+                                  </div>
+                          
+                                  <div>
+                                      <div class="flex items-center justify-between">
+                                          <label for="password" class="block text-sm font-medium leading-6 text-custom-green">Password</label>
+                                          <div class="text-sm">
+                                              <a href="#" class="font-semibold text-custom-orange hover:text-custom-green">Forgot password?</a>
+                                          </div>
+                                      </div>
+                                      <div class="mt-2">
+                                          <input id="password" name="password" type="password" autocomplete="current-password" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-custom-green sm:text-sm sm:leading-6">
+                                      </div>
+                                  </div>
+                          
+                                  <div>
+                                      <button type="submit" class="flex w-full justify-center rounded-md bg-custom-green px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-custom-light-green focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-custom-light-green">Sign in</button>
+                                  </div>
+                              </form>
+                      
+                              <p class="mt-10 text-center text-sm text-gray-500">
+                                  Not a member?
+                                  <a href="#" class="font-semibold leading-6 text-custom-orange hover:text-custom-green">Register now</a>
+                              </p>
+                          </div>
+                      </div>  
+                  </div>
+              </div>
+          </div>
+      </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

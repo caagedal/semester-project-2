@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js,mjs}","./index.html","./tester.html", "./listings/index.html", "./login/.html" ],
+  content: ["./src/**/*.{html,js,mjs}","./index.html","./tester.html", "./listings/index.html", "./listings/testytest.html", "./login/.html", "./listing/index.html","./profile/index.html" ],
   theme: {
     extend: {
       fontFamily: {
@@ -19,8 +19,10 @@ module.exports = {
       },
       spacing: {
         "custom-295": "18.438rem",
-        "custom-362": "22.625rem",
+        "custom-395": "24.688rem",
         "custom-249": "15.563rem",
+        "custom-215": "13.438rem",
+        "custom-500": "31.25rem"
       },
       flex: {
         "2": "1 1 25%",
