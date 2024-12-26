@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        raleway: [`Raleway`, `serif`],
         marcellus: [`Marcellus`, `serif`],
-        "pt-serif": [`PT Serif`, `serif`],
       },
       colors: {
         "custom-green": `#354242`,
@@ -16,13 +16,17 @@ module.exports = {
       borderRadius: {
         "4xl": "2rem",
         "5xl": "3.125rem",
+        "6xl": "100px",
       },
       spacing: {
         "custom-295": "18.438rem",
         "custom-395": "24.688rem",
         "custom-249": "15.563rem",
         "custom-215": "13.438rem",
-        "custom-500": "31.25rem"
+        "custom-500": "31.25rem",
+        "card-width": "280px",
+        "card-height": "400px",
+        "img-height": "230px",
       },
       flex: {
         "2": "1 1 25%",
