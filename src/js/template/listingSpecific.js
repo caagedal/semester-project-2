@@ -2,8 +2,6 @@ import { fetchListing } from "../api/listings/display.js";
 import { countDownTimer, formatDate, UpdatedDate } from "../handlers/timer.js";
 import { load } from "../storage/index.js";
 import { deleteListing } from "../api/listings/delete.js";
-// import { update } from "../api/listings/update.js";
-// import { getProfile } from "../api/profile/getProfile.js";
 import { onlineStatus } from "../storage/onlineStatus.js";
 
 

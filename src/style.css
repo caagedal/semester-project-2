@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 /*
 ! tailwindcss v3.4.10 | MIT License | https://tailwindcss.com
@@ -608,10 +608,6 @@ video {
   z-index: 10;
 }
 
-.z-50{
-  z-index: 50;
-}
-
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -649,10 +645,6 @@ video {
   height: 13.438rem;
 }
 
-.h-custom-395{
-  height: 24.688rem;
-}
-
 .h-full{
   height: 100%;
 }
@@ -677,12 +669,12 @@ video {
   width: 60%;
 }
 
-.w-card-width{
-  width: 280px;
+.w-96{
+  width: 24rem;
 }
 
-.w-custom-295{
-  width: 18.438rem;
+.w-card-width{
+  width: 280px;
 }
 
 .w-full{
@@ -695,10 +687,6 @@ video {
 
 .max-w-screen-xl{
   max-width: 1280px;
-}
-
-.flex-1{
-  flex: 1 1 0%;
 }
 
 .flex-grow{
@@ -883,6 +871,11 @@ video {
   background-color: rgb(229 227 220 / var(--tw-bg-opacity));
 }
 
+.bg-gray-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
 .bg-gray-500{
   --tw-bg-opacity: 1;
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
@@ -922,10 +915,6 @@ video {
   padding: 2rem;
 }
 
-.p-1{
-  padding: 0.25rem;
-}
-
 .px-12{
   padding-left: 3rem;
   padding-right: 3rem;
@@ -944,11 +933,6 @@ video {
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-}
-
-.py-1{
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
 }
 
 .py-1\.5{
@@ -984,6 +968,11 @@ video {
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-1{
@@ -1184,24 +1173,26 @@ video {
   font-style: normal;
 }
 
-a, button{
+a,
+button {
   cursor: pointer;
 }
 
-nav{
-  height: 110px;
+nav {
+  height: 100px;
 }
 
-.hero{
+.hero {
   background-image: url(/src/media/hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 450px;
-  width: 1280px;
+  max-width: 1280px;
+  width: 100%;
 }
 
-.nav-img{
+.nav-img {
   width: 50px;
   height: 50px;
 }
